@@ -46,20 +46,30 @@ body{
     [attr*=value]
 
 */
-/* 
-a[href="www.google.com"]{
-    background-color: yellow;
-}
-
-a[href="www.facebook.com"]{
+/* a[href]{
     background-color: red;
 }
 
-div[class*="x"]{
-    height: 100px;
-    background-color:green;
-    border:2px solid red;
+a[href="www.google.com"]{
+    background-color: red;
 } */
+
+/* input[type="gmail"]{
+    background-color:red;
+} */
+
+/* div[class*=""]{
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    border:2px solid black;
+    color:white;
+    font-size: 30px;
+} */
+
+
+
+
 
 
 
@@ -90,9 +100,9 @@ div[class*="x"]{
 } */
 
 
-p::selection{
-    /* font-size: 50px; */
+/* p::selection{
+    font-size: 50px;
     color:blueviolet;
     text-decoration: underline;
     background-color: yellow;
-}
+} */
