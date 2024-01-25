@@ -1,0 +1,14 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav{
+    white-space: 20px;
+    font-size: 20px;
+    font-family: initial;
+
+}
+button{
+    font-size: 20px;
+}
