@@ -23,10 +23,10 @@ body{
    ViewPort XXl Desktop >= 1400px
 */
 
-.responsive{
+/* .responsive{
   height: 500px;
   background-color: green;
-}
+} */
 
 
 
@@ -34,7 +34,7 @@ body{
 
 
 
-@media (max-width : 1400px){
+/* @media (max-width : 1400px){
   .responsive{
     background-color: black;
     color: white;
@@ -60,6 +60,6 @@ body{
   .responsive{
     background-color: red;
   }
-}
+} */
 
  

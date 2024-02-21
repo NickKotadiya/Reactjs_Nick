@@ -1,0 +1,116 @@
+@import 'All';
+
+@mixin position {
+    display: $d-flex;
+    justify-content: $justify-center;
+    align-items: $align-center;
+}
+
+.navigation{
+    display: $d-flex;
+    align-items: $align-center;
+    justify-content: $justify-center;
+    margin: $m-1;
+
+    .logo{
+        margin-right: $mr-1;
+        display: $d-flex;
+    }
+    .logo h2{
+        font-size: $f-2;
+        color: $f-c2;
+    }  
+    .navitems ul li {
+        display: $inli-b;
+        margin-left: $ml-1;
+        
+    }
+    ul li a{
+        text-decoration: $t-1;
+        color: $f-c3;
+        &:hover{
+            color: $f-c2;
+        }
+    }
+    .menu .button a{
+        padding: $padding1;
+        padding-left:$paddingL1;
+        font-size: $f-3;
+        color: $f-c3;
+        background-color: $bg1;
+        text-decoration: $t-1;
+        border-radius: $borader-r;
+        text-align: $t-align;
+    } 
+    .menu h1{
+        // position: $position-ad;
+        transform:rotate(-55deg);
+        top:$pt-1; right: $pr-1;
+    }
+}
+
+.main{
+  img{
+    height:620px; 
+    width:100%;
+  }
+  .text1{
+    @include position;
+  }
+  h1{
+    color: $f-c1;
+    // position: $position-ad;
+    bottom: 550px;
+  }
+  p{
+    color: $f-c1;
+    // position: $position-ad;
+    bottom: 530px;
+  }
+  .new{
+    // position: $position-ad;
+    bottom: 100px;
+    background-color: $f-c1;
+    height: 400px;
+    width: 1520px;
+  }
+  .new h1{
+    color: $f-c3;
+    top:-100px; left: 650px;
+    font-size:$f-4;
+  }
+  .new img{
+    // position: $position-ad;
+    top: 20px; left: 720px;
+    height: 130px;
+    width: 130px;
+  }
+  .new h2{
+    // position: $position-ad;
+    top: -120px; left: 845px;
+    font-size: $f-4;
+  }
+  .text2 p{
+    // position: $position-ad;
+    top: 400px; left: 680px;
+    color: $bg1;
+    font-size: $f-5;
+  }
+  .text2 h1{
+    font-size: $f-5;
+    // position: $position-ad;
+    top: 409px; left: 765px;
+    color: $f-c3;
+  }
+  .button2 a{
+    // position: $position-ad;
+    top: 480px; left: 750px;
+    padding: 10px;
+    background-color: $bg1;
+    text-decoration: $t-1;
+    color: $f-c1;
+  }
+}
+
+
+
