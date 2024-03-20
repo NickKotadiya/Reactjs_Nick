@@ -6,111 +6,114 @@
     align-items: $align-center;
 }
 
-.navigation{
-    display: $d-flex;
-    align-items: $align-center;
-    justify-content: $justify-center;
-    margin: $m-1;
-
-    .logo{
-        margin-right: $mr-1;
-        display: $d-flex;
+.container{
+  margin: 30px;
+  .navigation{
+    display: flex;
+    justify-content: space-between;
+  }
+  .logo img{
+    width: 100%;
+    height: 40px;
+  }
+  .navitems ul{
+    list-style-type: none;
+    display: flex;
+    li a{
+      color: black;
+      margin-left: 30px;
+      text-decoration: none;
+      &:hover{
+        color: orange;
+      }
     }
-    .logo h2{
-        font-size: $f-2;
-        color: $f-c2;
-    }  
-    .navitems ul li {
-        display: $inli-b;
-        margin-left: $ml-1;
+  }
+  .menu{
+    .button{
+      height: 60px;
+      width: 150px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #ff6d09;
+      img{
+        height: 20px;
+        width: 20px;
+      }
+      a{
+        text-decoration: none;
+        color: black;
         
+      }
     }
-    ul li a{
-        text-decoration: $t-1;
-        color: $f-c3;
-        &:hover{
-            color: $f-c2;
-        }
-    }
-    .menu .button a{
-        padding: $padding1;
-        padding-left:$paddingL1;
-        font-size: $f-3;
-        color: $f-c3;
-        background-color: $bg1;
-        text-decoration: $t-1;
-        border-radius: $borader-r;
-        text-align: $t-align;
-    } 
-    .menu h1{
-        // position: $position-ad;
-        transform:rotate(-55deg);
-        top:$pt-1; right: $pr-1;
-    }
+  }
 }
+
+/****** banner ***********/
 
 .main{
   img{
-    height:620px; 
-    width:100%;
+      width: 100%;
+      height: 150px;
+    }
+  .img4{
+   width: 1519px;
+   height: 150px;
+   background-color:#241234;
+   position: absolute;
+   opacity: 0.5;
   }
   .text1{
-    @include position;
-  }
-  h1{
-    color: $f-c1;
-    // position: $position-ad;
-    bottom: 550px;
-  }
-  p{
-    color: $f-c1;
-    // position: $position-ad;
-    bottom: 530px;
+    position: absolute;
+    top: 140px; left: 670px;
+    text-align: center;
+    line-height: 20px;
+    color: white;
   }
   .new{
-    // position: $position-ad;
-    bottom: 100px;
-    background-color: $f-c1;
-    height: 400px;
-    width: 1520px;
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    img{
+      height: 150px;
+      width: 400px;
+    }
   }
-  .new h1{
-    color: $f-c3;
-    top:-100px; left: 650px;
-    font-size:$f-4;
+  .text2{
+    display: flex;
+    justify-content: center;
+    p{
+      font-size: 35px;
+      color: #ff6d09;
+    }
+    h1{
+      font-size: 40px;
+    }
   }
-  .new img{
-    // position: $position-ad;
-    top: 20px; left: 720px;
-    height: 130px;
-    width: 130px;
+  .button2{
+    display: flex;
+    justify-content: center;
+    .one{
+      height: 50px;
+      width: 170px;
+      border: 0;
+      background-color: #ff6d09;
+      text-decoration: none;
+      color: white;
+    }
   }
-  .new h2{
-    // position: $position-ad;
-    top: -120px; left: 845px;
-    font-size: $f-4;
-  }
-  .text2 p{
-    // position: $position-ad;
-    top: 400px; left: 680px;
-    color: $bg1;
-    font-size: $f-5;
-  }
-  .text2 h1{
-    font-size: $f-5;
-    // position: $position-ad;
-    top: 409px; left: 765px;
-    color: $f-c3;
-  }
-  .button2 a{
-    // position: $position-ad;
-    top: 480px; left: 750px;
-    padding: 10px;
-    background-color: $bg1;
-    text-decoration: $t-1;
-    color: $f-c1;
+  .imgall5{
+    margin-top: 20px;
+    img{
+      height: 100%;
+      width: 100%;
+    }
+    .tool{
+      width: 1519px;
+      height: 66px;
+      background-color:#241234;
+      position: absolute;
+      opacity: 0.5;
+    }
   }
 }
-
-
-
